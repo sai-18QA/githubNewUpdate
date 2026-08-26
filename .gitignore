@@ -8,4 +8,4 @@ node_modules/
 /playwright/.auth/
 
 # Environment file
-test/qa.env
+/test/qa.env
