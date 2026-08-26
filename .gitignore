@@ -9,3 +9,7 @@ node_modules/
 
 # Environment file
 /test/qa.env
+
+
+# Ignore this test because it contains secrets
+tests/API_uI_marathonLeads.spec.ts
