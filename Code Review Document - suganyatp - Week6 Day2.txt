@@ -1,0 +1,39 @@
+✅ CODE REVIEW DOCUMENT - suganyatp
+
+File Name/Path: https://github.com/suganyatp/MyAssignments/tree/main/Week6/Day2
+Author: suganyatp
+Reviewer Name: Sangirthiyayan
+
+### Code Working Status:
+
+☑ Works as expected / ☐ Partially works / ☐ Does not work
+
+### Review Checklist:
+
+**Naming:**
+
+☑ The naming convention for file names and variable names are good. / ☐ There are issues (explain).
+
+**Comments:**
+
+☑ Comment lines are added. / ☐ Missing comments (explain).
+
+**Formatting:**
+
+☑ Coding standards are okay, and looking good. / ☐ Formatting issues (explain).
+
+**Functionality:**
+
+☑ Meets requirements specified, expected output is met. / ☐ Issues found (explain).
+
+**Best Practices:**
+
+☑ Everything looks good. / ☐ Recommendations (explain).
+
+### Strength:
+
+* Good use of interface-based abstraction and clear object-oriented flow for the payment methods example.
+
+### Improvement:
+
+No significant issues found.
