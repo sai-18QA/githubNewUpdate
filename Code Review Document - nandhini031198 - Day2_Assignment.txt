@@ -1,0 +1,36 @@
+✅ CODE REVIEW DOCUMENT - nandhini031198
+File Name/Path: https://github.com/nandhini031198/MyAssignments/tree/main/Day2_Assignment
+Author: nandhini031198
+Reviewer Name: Sangirthiyayan
+
+### Code Working Status:
+☑ Works as expected / ☐ Partially works / ☐ Does not work
+
+### Review Checklist:
+
+**Naming:**
+
+☑ The naming convention for file names and variable names are good. / ☐ There are issues (explain).
+
+**Comments:**
+
+☐ Comment lines are added. / ☑ Missing comments (explain).
+The assignment files are readable, but they would benefit from short comments describing the logic in each function.
+
+**Formatting:**
+
+☑ Coding standards are okay, and looking good. / ☐ Formatting issues (explain).
+
+**Functionality:**
+
+☑ Meets requirements specified, expected output is met. / ☐ Issues found (explain).
+
+**Best Practices:**
+
+☑ Everything looks good. / ☐ Recommendations (explain).
+
+### Strength:
+* The Day 2 assignments demonstrate clear logic and use straightforward conditional checks effectively.
+
+### Improvement:
+No significant issues found.
