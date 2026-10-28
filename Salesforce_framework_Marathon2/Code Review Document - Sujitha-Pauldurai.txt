@@ -1,0 +1,38 @@
+✅ CODE REVIEW DOCUMENT - Sujitha-Pauldurai
+File Name/Path: https://github.com/Sujitha-Pauldurai/Salesforce_framework_Marathon2
+Author: Sujitha-Pauldurai
+Reviewer Name: Sangirthiyayan
+
+### Code Working Status:
+
+☐ Partially works
+
+### Review Checklist:
+
+**Naming:**
+
+☑ The naming convention for file names and variable names are good.
+
+**Comments:**
+
+☑ Comment lines are added.
+
+**Formatting:**
+
+☑ Coding standards are okay, and looking good.
+
+**Functionality:**
+
+☐ Issues found (the Salesforce API flow is valid, but the implementation uses fixed record data and hardcoded credentials that can cause repeat-run failures and unsafe execution).
+
+**Best Practices:**
+
+☐ Recommendations (externalize credentials and generate unique test entity names for each run).
+
+### Strength:
+* The API methods are well organized and cover token generation, record creation, update, and deletion for Salesforce objects.
+
+### Improvement:
+* Line: "Name" : "Account - PW API", → Static record names cause duplicate data on repeated test runs and can break assertions that expect a fresh setup → Correction: `const uniqueName = \\`Account - PW API ${Date.now()}\\`; "Name": uniqueName`
+* Line: console.log(tokenValue); → Logging the access token exposes secret credentials in console output and CI logs → Correction: `console.log('Access token received successfully');`
+* Line: let resBody = await this.request.post('https://orgfarm-2596c4c030-dev-ed.develop.my.salesforce.com/services/oauth2/token',{ → Hardcoded OAuth URL and secrets make the script environment-specific and risky to store in source control → Correction: `const oauthUrl = process.env.SALESFORCE_OAUTH_URL; const clientId = process.env.SALESFORCE_CLIENT_ID; const clientSecret = process.env.SALESFORCE_CLIENT_SECRET; let resBody = await this.request.post(`${oauthUrl}/services/oauth2/token`, { ... })`
